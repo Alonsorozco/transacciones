@@ -448,6 +448,3 @@ ALTER TABLE ONLY public.detalle_compra
 -- requerimiento y luego consulta la tabla producto para validar si fue efectivamente
 -- descontado en el stock.
 
-
-BEGIN TRANSACTION;
-UPDATE cliente SET stock = stock - 5 WHERE producto_id
